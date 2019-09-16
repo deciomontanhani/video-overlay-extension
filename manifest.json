@@ -1,0 +1,15 @@
+{ 
+    "name": "Video Overlay",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["https://hangouts.google.com/call*"],
+            "css": ["myStyles.css"],
+            "js": ["content.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        "videos/example.mp4"
+    ]
+}
